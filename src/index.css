@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    font-family: 'Roboto';
+}
+
 .sh {
     box-shadow: 0 0 0 1px #00000020, 0 1px 2px #00000020;
 }

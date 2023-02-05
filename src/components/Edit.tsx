@@ -39,26 +39,27 @@ const Edit: React.FC = () => {
         <div className="flex items-center justify-between">
           <span className="text-slate-800 text-sm">Name:</span>
           <input
-            className="sh py-1 px-3 w-full"
+            className="sh p-3 w-full"
             type="text"
             name="name"
             placeholder="react-query-magazine"
           />
         </div>
         <div className="flex gap-4 justify-center">
-        <button
-          onClick={() => navigate(-1)}
-          className="sh px-4 py-1 rounded-md bg-white font-sm text-zinc-900"
-        >
-          Voltar
-        </button>
-        <button
-          onClick={handleSubmitButton}
-          className="sh px-4 py-1 rounded-md bg-blue-600 font-sm text-white"
-          type="submit"
-        >
-          Enviar
-        </button>
+          <button
+            onClick={() => navigate(-1)}
+            className="sh px-4 py-1 rounded-md bg-white font-sm text-zinc-900"
+            type="button"
+          >
+            Voltar
+          </button>
+          <button
+            onClick={handleSubmitButton}
+            className="sh px-4 py-1 rounded-md bg-blue-600 font-sm text-white"
+            type="submit"
+          >
+            Enviar
+          </button>
         </div>
       </Form>
     </div>
