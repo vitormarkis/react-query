@@ -2,8 +2,9 @@ import axios from "axios"
 import React from "react"
 import { useQuery } from "react-query"
 import { baseURL } from "../constants"
+import Item from "./Item"
 
-interface ItemProps {
+export interface ItemProps {
   id: string
   name: string
   created_at: string
@@ -26,7 +27,7 @@ const Items: React.FC = () => {
   return (
     <>
       {items?.map(item => (
-        <li key={item.id}>{item.name}</li>
+        <Item key={item.id} {...item} />
       ))}
     </>
   )
